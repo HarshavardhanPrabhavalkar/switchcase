@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h3>Addition</h3>
+    <h3>Substraction</h3>
+    <h3>Multiplication</h3>
+    <h3>Division</h3>
+    <input type="text" id="no1" placeholder="First value"><br><br>
+    <input type="text" id="no2" placeholder="Second value"><br><br>
+    <input type="text" id="ch" placeholder="Enter Choice"><br><br>
+    <button onclick="calculate()">submit</button>
+
+    <script>
+      function calculate()
+      {
+        var x =parseInt(document.getElementById("no1").value);
+        var y =parseInt(document.getElementById("no2").value);
+        var ch =parseInt(document.getElementById("ch").value);
+        var res;
+    
+
+      switch(ch)
+      {
+        case 1: res = x+y;
+                document.write("addition of 1st value =" + res);
+                break;
+        
+        case 2: res = x-y;
+                document.write("substraction of 1st value =" + res);
+                break;
+
+         case 3: res = x*y;
+                document.write("multiplication of 1st value =" + res);
+                break;
+         
+         case 4: res = x/y;
+                document.write("division of 1st value =" + res); 
+                break;   
+                
+                
+                default:
+                  document.write("enter your value");
+      }
+    }
+    </script>
+</body>
+</html>
